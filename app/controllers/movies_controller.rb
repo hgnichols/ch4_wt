@@ -7,6 +7,9 @@ class MoviesController < ApplicationController
   def show
     id = params[:id] 
     @movie = Movie.find(id) 
+    byebug
+    logger.debug("I am a debug message")
+    raise params.inspect
   end
   
   # add below all other methods
