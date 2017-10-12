@@ -12,6 +12,11 @@ class MoviesController < ApplicationController
     raise params.inspect
   end
   
+  def new
+  @movie = Movie.new
+  # default: render 'new' template
+  end 
+
   # add below all other methods
 private
 
